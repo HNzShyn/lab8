@@ -4,8 +4,8 @@ const port = process.env.PORT || 3000;
 const path = require("path");
 const mongoose = require("mongoose");
 const studentModel = require("./models/StudentSchema");
-// const url = "mongodb://localhost:27017/greenwich";
-const url = "mongodb+srv://hnzshyn:shyn1903112002@cluster0.djzhqbp.mongodb.net/greenwich";
+const url = "mongodb://localhost:27017/greenwich";
+// const url = "mongodb+srv://hnzshyn:shyn1903112002@cluster0.djzhqbp.mongodb.net/greenwich";
 mongoose.connect(url, {useNewUrlParser: true}, (err) => {
     if(err) 
     {
